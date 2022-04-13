@@ -27,6 +27,8 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 40px;
   @media only screen and (max-width: 480px) {
     width: 100%;
   }

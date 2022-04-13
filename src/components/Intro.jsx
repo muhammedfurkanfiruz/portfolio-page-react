@@ -14,12 +14,14 @@ const Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 `;
 const Right = styled.div`
   width: 40%;
 `;
 const Image = styled.img`
   width: 100%;
+  
 `;
 const Title = styled.h1`
   width: 60%;
