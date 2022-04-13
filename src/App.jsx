@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 // import Intro from "./components/Intro";
 // import Navbar from "./components/Navbar";
 // import Price from "./components/Price";
-// import Service from "./components/Service";
+import Service from "./components/Service";
 
 const Container = styled.div`
   height: 100vh;
@@ -31,9 +31,14 @@ const IntoShape = styled.div`
 
 const FeatureShape = styled.div`
   ${Shape}
-  clip-path: polygon(0 0, 55% 0%, 33% 100%, 0 100%);
+  clip-path: polygon(0 0, 55% 0%, 33% 80%, 0 80%);
   background-color:#f4f7f7;
   top: 158px;
+`;
+const ServiceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 33% 0%, 33% 100%, 0 100%);
+  background-color: #f88497;
 `;
 
 const App = () => {
@@ -45,6 +50,10 @@ const App = () => {
       <Container>
         <Feature />
         <FeatureShape />
+      </Container>
+      <Container>
+        <Service />
+        
       </Container>
     </Container>
   )
